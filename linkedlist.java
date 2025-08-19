@@ -1,8 +1,5 @@
 public class LinkedList {
-
-    Node head; // List head reference
-
-    // Node definition
+    Node head; 
     static class Node {
         int data;
         Node next;
@@ -11,8 +8,6 @@ public class LinkedList {
             next = null;
         }
     }
-
-    // Add new node at the end
     public static LinkedList insert(LinkedList list, int data) {
         Node new_node = new Node(data);
         if (list.head == null) {
@@ -26,8 +21,6 @@ public class LinkedList {
         }
         return list;
     }
-
-    // Print all elements
     public static void printList(LinkedList list) {
         Node currNode = list.head;
         System.out.print("LinkedList: ");
@@ -44,6 +37,6 @@ public class LinkedList {
         list = insert(list, 2);
         list = insert(list, 3);
 
-        printList(list); // Output: LinkedList: 1 2 3
+        printList(list);
     }
 }
