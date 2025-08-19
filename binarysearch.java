@@ -5,7 +5,7 @@ class binary
         while (l <= r) {
             int m = (l + r) / 2;
 
-            // Index of Element Returned
+            
             if (a[m] == x) {
                 return m;
             } else if (a[m] > x) {
